@@ -195,15 +195,19 @@ Burada domain konfigürasyon dosyası oluştururken olduğu gibi önemli nokta;
 gelen isteklerdeki php dosyalarının fpm soketine iletilmesidir.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/3.jpg)
+
 Oluşturduğumuz phpmyadmin mysql kullanıcısı ile phpmyadmin'e login oluyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/4.jpg)
+
 Yeşil ile işaretli alana tıklıyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/5.jpg)
+
 Yeşil ile işaretli alana tıklıyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/6.jpg)
+
 Phpmyadmin'in kendi veritabanını da başarıyla oluşturduktan sonra yukarıdaki gibi bir ekran bizi karşılıyor.
 
 Kurulumu başarıyla tamamlamış olmamız gerekiyor. Sonraki yazılarım kuvvetle muhtemel kernel hardening, dos/ddos attack mitigating, letsencrypt certbot kullanımı, spf, dkim records, dns server, postfix, dovecot, roundcube gibi konular üzerine olacak. Takipte ve sağlıcakla kalmanız dileğiyle.
