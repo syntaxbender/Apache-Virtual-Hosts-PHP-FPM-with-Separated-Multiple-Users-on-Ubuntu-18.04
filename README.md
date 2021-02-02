@@ -219,3 +219,5 @@ Yeşil ile işaretli alana tıklıyoruz.
 Phpmyadmin'in kendi veritabanını da başarıyla oluşturduktan sonra yukarıdaki gibi bir ekran bizi karşılıyor.
 
 Kurulumu başarıyla tamamlamış olmamız gerekiyor. Sonraki yazılarım kuvvetle muhtemel kernel hardening, dos/ddos attack mitigating, letsencrypt certbot kullanımı, spf, dkim records, dns server, postfix, dovecot, roundcube gibi konular üzerine olacak. Takipte ve sağlıcakla kalmanız dileğiyle.
+
+
