@@ -37,15 +37,20 @@ mysql_secure_installation
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/mysql/1.jpg)
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/mysql/2.jpg)
+
 Yukarıdaki resimde reposu eklenecek mysql araçlarını seçmelisiniz. Default haliyle uygundur.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/mysql/3.jpg)
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/mysql/4.jpg)
+
 MySQL root şifresini belirliyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/mysql/5.jpg)
+
 phpmyadmin tarzı bazı uygulamalarla uyumlu olarak sorunsuz çalışması için 5.x seçmelisiniz.
+
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/mysql/6.jpg)
+
 Resimdeki gibi ayarlayabilirsiniz.
 ```bash
 apt install curl php7.2 php7.2-mysql php7.2-curl php7.2-mbstring php7.2-fpm
@@ -152,8 +157,11 @@ Yukarıdaki bash kodları ile de apache web sunucusu üzerinde domainimizi aktiv
 apt install phpmyadmin
 ```
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/1.jpg)
-Apache'yi klavyeden space ile işaretleyip tab tuşuyla "\<Ok\>" butonuna geçiş yapıp enter ile onaylıyoruz.
+
+Apache'yi klavyeden space  tuşu ile işaretleyip tab tuşuyla "\<Ok\>" butonuna geçiş yapıp enter ile onaylıyoruz.
+
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/2.jpg)
+
 Bu soruyu ise "\<No\>" şeklinde yanıtlıyoruz.
 
 Phpmyadmin paketi kurulumunu tamamladık. http://domain.com/phpmyadmin adresine gidersek phpmyadmin'in php kaynak kodlarını olduğu gibi ekrana çıktı verdiğini göreceğiz bu durumu da çözmek adına phpmyadmin apache konfigürasyon dosyasını açıyoruz.
@@ -195,15 +203,19 @@ Burada domain konfigürasyon dosyası oluştururken olduğu gibi önemli nokta;
 gelen isteklerdeki php dosyalarının fpm soketine iletilmesidir.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/3.jpg)
+
 Oluşturduğumuz phpmyadmin mysql kullanıcısı ile phpmyadmin'e login oluyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/4.jpg)
+
 Yeşil ile işaretli alana tıklıyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/5.jpg)
+
 Yeşil ile işaretli alana tıklıyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/6.jpg)
+
 Phpmyadmin'in kendi veritabanını da başarıyla oluşturduktan sonra yukarıdaki gibi bir ekran bizi karşılıyor.
 
 Kurulumu başarıyla tamamlamış olmamız gerekiyor. Sonraki yazılarım kuvvetle muhtemel kernel hardening, dos/ddos attack mitigating, letsencrypt certbot kullanımı, spf, dkim records, dns server, postfix, dovecot, roundcube gibi konular üzerine olacak. Takipte ve sağlıcakla kalmanız dileğiyle.
