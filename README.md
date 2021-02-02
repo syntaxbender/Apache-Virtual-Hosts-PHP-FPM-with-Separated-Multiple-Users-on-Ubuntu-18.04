@@ -158,7 +158,7 @@ apt install phpmyadmin
 ```
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/1.jpg)
 
-Apache'yi klavyeden space  tuşu ile işaretleyip tab tuşuyla "\<Ok\>" butonuna geçiş yapıp enter ile onaylıyoruz.
+Apache'yi klavyeden space tuşu ile işaretleyip tab tuşuyla "\<Ok\>" butonuna geçiş yapıp enter ile onaylıyoruz.
 
 ![alt text](https://raw.githubusercontent.com/syntaxbender/syntaxbender/main/assets/imgs/sistem-apache-seperate-users/phpmyadmin/2.jpg)
 
@@ -219,5 +219,3 @@ Yeşil ile işaretli alana tıklıyoruz.
 Phpmyadmin'in kendi veritabanını da başarıyla oluşturduktan sonra yukarıdaki gibi bir ekran bizi karşılıyor.
 
 Kurulumu başarıyla tamamlamış olmamız gerekiyor. Sonraki yazılarım kuvvetle muhtemel kernel hardening, dos/ddos attack mitigating, letsencrypt certbot kullanımı, spf, dkim records, dns server, postfix, dovecot, roundcube gibi konular üzerine olacak. Takipte ve sağlıcakla kalmanız dileğiyle.
-
-
