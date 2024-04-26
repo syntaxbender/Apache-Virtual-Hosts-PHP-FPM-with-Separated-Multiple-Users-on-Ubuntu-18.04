@@ -56,7 +56,7 @@ Resimdeki gibi ayarlayabilirsiniz.
 apt install curl php7.2 php7.2-mysql php7.2-curl php7.2-mbstring php7.2-fpm
 a2enmod proxy
 a2enmod proxy_fcgi
-useradd -m -d /home/USER/ -s /bin/bash -c -U USER -G sudo
+useradd -m -d /home/USER/ -s /bin/bash -U USER -G sudo
 mkdir /home/USER/public_html
 chmod -R 750 /home/USER/
 chown -R USER:USER /home/USER/
