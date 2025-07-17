@@ -24,11 +24,11 @@ apt upgrade
 apt install gnupg
 apt install software-properties-common
 apt install apache2
-wget https://repo.mysql.com/mysql-apt-config_0.8.16-1_all.deb
-dpkg -i mysql-apt-config_0.8.16-1_all.deb
-```
-```bash
-wget https://repo.mysql.com/mysql-apt-config_0.8.16-1_all.deb
+
+wget "https://dev.mysql.com$(curl -s "https://dev.mysql.com/downloads/file/?id=541905" \
+	| grep -oP '(?<=<a href=")/get/mysql-apt-config_.*?\.deb' \
+	| head -n 1)"
+
 dpkg -i mysql-apt-config_0.8.16-1_all.deb
 apt update
 apt install mysql-server
